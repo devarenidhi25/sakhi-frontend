@@ -132,10 +132,11 @@ h6 {
 }
 
 .signin-link {
-  color: var(--accent);
+  color: #fff; /* white */
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 
 .signin-link:hover {
   color: var(--white);
