@@ -75,4 +75,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     particlesContainer.appendChild(particle);
   }
+  const navbar = document.querySelector(".navbar");
+
+if (navbar) {
+  console.log("✅ Navbar found");
+
+  window.addEventListener("scroll", () => {
+    console.log("Scroll position:", window.scrollY);
+
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+      console.log("➡️ Class 'scrolled' added");
+    } else {
+      navbar.classList.remove("scrolled");
+      console.log("⬅️ Class 'scrolled' removed");
+    }
+  });
+} else {
+  console.warn("❌ Navbar not found on this page");
+}
+
 });

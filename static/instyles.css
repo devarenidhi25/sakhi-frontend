@@ -45,6 +45,77 @@ h6 {
   backdrop-filter: blur(3px);
 }
 
+.navbar {
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 15px 0;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: var(--primary-dark);
+  padding: 10px 0;
+  box-shadow: var(--shadow);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.nav-logo {
+  height: 80px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white) !important;
+  font-weight: 500;
+  margin: 0 15px;
+  position: relative;
+  padding: 8px 0;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.chat-btn {
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.chat-btn i {
+  margin-right: 8px;
+}
+
+.chat-btn:hover {
+  background: var(--white);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
 .sign-in-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
