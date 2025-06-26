@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       chatBody.appendChild(loadingDiv);
 
       // Make API call to your FastAPI endpoint
-      const response = await fetch("http://127.0.0.1:8000/chatbot/", {
+      const response = await fetch("https://sakhi-backend-vk6j.onrender.com/chatbot/", {
     
         method: "POST",
         headers: {
