@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/severity/", {
+      const response = await fetch("https://sakhi-backend-vk6j.onrender.com/severity/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(incidentDetails),
